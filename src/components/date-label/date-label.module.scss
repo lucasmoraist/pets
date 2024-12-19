@@ -1,0 +1,41 @@
+@use "@/index.scss" as *;
+
+.dateContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .dateLabel {
+    width: 172px;
+    height: 48px;
+    border: solid 1px $border-primary;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    cursor: pointer;
+    .dateText {
+      color: $content-secondary;
+      font-size: 1rem;
+    }
+
+    .active {
+        transform: rotate(180deg);
+        transition: .5s;
+    }
+
+    .inactive {
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+  }
+
+  .modal {
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+}

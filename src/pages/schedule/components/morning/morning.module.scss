@@ -1,0 +1,33 @@
+@use "@/index.scss" as *;
+
+.morningContainer {
+  width: 711px;
+  height: 136px;
+  border-radius: 10px;
+  background-color: $bg-tertiary;
+
+  .morningTop {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #2e2c30;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    span {
+      color: $content-secondary;
+    }
+  }
+
+  .morningBottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

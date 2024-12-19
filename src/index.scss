@@ -1,0 +1,124 @@
+$content-primary: #ffffff;
+$content-secondary: #98959d;
+$content-tertiary: #666666;
+$content-brand: #9282fa;
+
+$bg-primary: #151515;
+$bg-secondary: #1e1e1e;
+$bg-tertiary: #23242c;
+$bg-brand: #9282fa;
+$bg-highlights: #bdb4fa;
+
+$border-primary: #3e3c41;
+$border-secondary: #86818c;
+$border-brand: #9282fa;
+$border-divisor: #353339;
+
+$accent-blue: #027df0;
+$accent-blue-light: #16487a;
+$accent-yellow: #f0dc02;
+$accent-yellow-light: #756e1b;
+$accent-orange: #f09102;
+$accent-brown: #75501b;
+
+$breakpoint-mobile-xs: 320px;
+$breakpoint-mobile-sm: 375px;
+$breakpoint-mobile-md: 412px;
+$breakpoint-mobile-lg: 425px;
+
+$breakpoint-tablet-sm: 768px;
+$breakpoint-tablet-md: 1024px;
+
+$breakpoint-desktop-sm: 1280px;
+$breakpoint-desktop-md: 1440px;
+$breakpoint-desktop-lg: 1920px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  color: $content-primary;
+}
+
+body {
+  background-color: #14151d;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: "Inter Tight", serif;
+}
+
+.paragraph-small {
+  font-size: 0.75rem;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.paragraph-medium {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.label-small {
+  font-size: 0.75rem;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.label-medium {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.label-large {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 0.875rem;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.react-calendar {
+  background-color: #14151D;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.react-calendar__tile--now {
+  background: none;
+}
+
+.react-calendar__tile--active {
+  background: #006edc;
+}
+
+.react-calendar__tile:disabled {
+  background: #23242C;
+}
+
+.react-calendar__navigation button:disabled {
+  background: none;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+.react-calendar__navigation button:enabled:hover {
+  background: #23242C;
+}
+
+.react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+  background: #23242C;
+}

@@ -1,0 +1,32 @@
+@use "@/index.scss" as *;
+
+.afternoonContainer {
+  width: 711px;
+  border-radius: 10px;
+  background-color: $bg-tertiary;
+
+  .afternoonTop {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #2e2c30;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    span {
+      color: $content-secondary;
+    }
+  }
+
+  .afternoonBottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

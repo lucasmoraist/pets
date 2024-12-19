@@ -1,0 +1,73 @@
+@use "@/index.scss" as *;
+
+.hourContainer {
+  position: relative;
+  .hourLabel,
+  .hourLabelOpen {
+    width: 190px;
+    height: 48px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      span {
+        color: $content-secondary;
+      }
+    }
+    .active {
+      transform: rotate(180deg);
+      transition: 0.5s;
+    }
+    .inactive {
+      transition: 0.5s;
+    }
+  }
+
+  .hourLabelOpen {
+    border-radius: 8px 8px 0 0;
+    border-left: solid 1px $border-primary;
+    border-right: solid 1px $border-primary;
+    border-top: solid 1px $border-primary;
+  }
+
+  .hourLabel {
+    border-radius: 8px;
+    border: solid 1px $border-primary;
+  }
+
+  ul {
+    gap: 8px;
+    position: absolute;
+
+    li {
+      width: 190px;
+      height: 38px;
+      background-color: #23242C;
+      padding: 12px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-left: solid 1px $border-primary;
+      border-right: solid 1px $border-primary;
+
+      cursor: pointer;
+
+      &:last-child {
+        border-radius: 0 0 8px 8px;
+        border-bottom: solid 1px $border-primary;
+      }
+
+      &:hover {
+        background-color: $bg-secondary;
+      }
+    }
+  }
+}
