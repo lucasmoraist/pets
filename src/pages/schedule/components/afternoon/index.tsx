@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react";
-import { IScheduling } from "../../../../interface/scheduling";
 import style from "./afternoon.module.scss";
-import { schedulingMock } from "../../../../mocks/scheduling";
 import { List } from "../../../../components/list";
+import { ISchedule } from "../../../../interface/schedule.interface";
 
-export function Afternoon() {
-  const [scheduling, setScheduling] = useState<IScheduling[]>([]);
+interface Props {
+  schedule: ISchedule[];
+}
 
-  useEffect(() => {
-    setScheduling(schedulingMock);
-  }, []);
-
+export function Afternoon({ schedule }: Props) {
   return (
     <div className={style.afternoonContainer}>
       <div className={style.afternoonTop}>
@@ -23,7 +19,7 @@ export function Afternoon() {
       </div>
 
       <div className={style.afternoonBottom}>
-        {scheduling
+        {schedule
           .filter((item) => item.time >= "13:00" && item.time < "19:00")
           .map((item) => (
             <List key={item.id} item={item} />

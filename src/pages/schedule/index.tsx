@@ -5,10 +5,27 @@ import { Evening } from "./components/evening";
 import { Morning } from "./components/morning";
 import style from "./schedule.module.scss";
 import { Button } from "../../components/button";
+import { useEffect, useState } from "react";
+import { getSchedule } from "../../api/api";
+import { ISchedule } from "../../interface/schedule.interface";
+
+type ValuePiece = Date | null;
+
+type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 export function Schedule() {
+  const [date, setDate] = useState<Value>(new Date());
+  const [schedule, setSchedule] = useState<ISchedule[] | []>([]);
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  useEffect(() => {
+    async function fetchSchedule() {
+      const response = await getSchedule();
+      setSchedule(response);
+    }
+
+    fetchSchedule();
+  }, []);
 
   return (
     <section className={style.schedule}>
@@ -22,17 +39,20 @@ export function Schedule() {
                 hoje.
               </p>
             </div>
-            <DateLabel />
+            <DateLabel date={date} setDate={setDate} />
           </div>
 
           <div className={style.scheduleList}>
-            <Morning />
-            <Afternoon />
-            <Evening />
+            <Morning schedule={schedule} />
+            <Afternoon schedule={schedule} />
+            <Evening schedule={schedule} />
           </div>
         </div>
 
-        <Button className={style.scheduling} onClick={() => navigate('/agendamento')}>
+        <Button
+          className={style.scheduling}
+          onClick={() => navigate("/agendamento")}
+        >
           <span className="label-large">NOVO AGENDAMENTO</span>
         </Button>
       </div>

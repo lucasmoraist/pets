@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { IScheduling } from "../../interface/scheduling";
+import { ISchedule } from "../../interface/schedule.interface";
 
 interface Props {
-  item: IScheduling;
+  item: ISchedule;
 }
 
 export function List({ item }: Props) {

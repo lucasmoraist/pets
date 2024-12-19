@@ -3,12 +3,16 @@ import style from "./date-label.module.scss";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
+interface Props {
+  date: Value;
+  setDate: (value: Date) => void;
+}
+
 type ValuePiece = Date | null;
 
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
-export function DateLabel() {
-  const [date, setDate] = useState<Value>(new Date());
+export function DateLabel({ date, setDate }: Props) {
   const [modalOpen, setModalOpen] = useState(false);
 
   const toggleModal = () => setModalOpen(!modalOpen);
