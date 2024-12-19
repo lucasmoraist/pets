@@ -1,0 +1,117 @@
+{
+  "owner": [
+    {
+      "id": 1,
+      "name": "Fernanda Costa",
+      "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "name": "João Souza",
+      "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": 3,
+      "name": "Pedro Martins",
+      "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": 4,
+      "name": "Juliana Rocha",
+      "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": 5,
+      "name": "Camila Santos",
+      "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": "fd66",
+      "name": "Lucas",
+      "phoneNumber": "11981109608"
+    }
+  ],
+  "pet": [
+    {
+      "id": 1,
+      "name": "Thor",
+      "ownerId": 1
+    },
+    {
+      "id": 2,
+      "name": "Mel",
+      "ownerId": 2
+    },
+    {
+      "id": 3,
+      "name": "Bella",
+      "ownerId": 3
+    },
+    {
+      "id": 4,
+      "name": "Simba",
+      "ownerId": 4
+    },
+    {
+      "id": 5,
+      "name": "Max",
+      "ownerId": 5
+    },
+    {
+      "id": "cb0f",
+      "name": "Rex",
+      "ownerId": "fd66"
+    }
+  ],
+  "schedule": [
+    {
+      "id": 1,
+      "petId": 1,
+      "date": "2024-12-19T03:00:00.000Z",
+      "time": "09:00",
+      "type": "Vacinação"
+    },
+    {
+      "id": 2,
+      "petId": 2,
+      "date": "2024-12-19T03:00:00.000Z",
+      "time": "13:00",
+      "type": "Corte de unhas"
+    },
+    {
+      "id": 3,
+      "petId": 3,
+      "date": "2024-12-19T03:00:00.000Z",
+      "time": "14:00",
+      "type": "Aplicação de anti-pulgas"
+    },
+    {
+      "id": 4,
+      "petId": 4,
+      "date": "2024-12-19T03:00:00.000Z",
+      "time": "15:00",
+      "type": "Tosa higiênica"
+    },
+    {
+      "id": 5,
+      "petId": 5,
+      "date": "2024-12-19T03:00:00.000Z",
+      "time": "20:00",
+      "type": "Limpeza de dentes"
+    },
+    {
+      "id": "6c61",
+      "petId": "cb0f",
+      "date": "2024-12-20T03:00:00.000Z",
+      "time": "16:00",
+      "type": "Banho e tosa"
+    },
+    {
+      "id": "c624",
+      "petId": "cb0f",
+      "date": "2024-12-20T03:00:00.000Z",
+      "time": "15:00",
+      "type": "Banho e tosa"
+    }
+  ]
+}

@@ -20,12 +20,19 @@ export function Schedule() {
 
   useEffect(() => {
     async function fetchSchedule() {
-      const response = await getSchedule();
-      setSchedule(response);
+      const formattedDate =
+        date instanceof Date
+          ? date.toLocaleDateString("pt-BR")
+          : null;
+
+      if (formattedDate) {
+        const response = await getSchedule(formattedDate);
+        setSchedule(response);
+      }
     }
 
     fetchSchedule();
-  }, []);
+  }, [date]);
 
   return (
     <section className={style.schedule}>
