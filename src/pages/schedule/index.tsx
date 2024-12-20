@@ -32,7 +32,7 @@ export function Schedule() {
     }
 
     fetchSchedule();
-  }, [date]);
+  }, [date, schedule]);
 
   return (
     <section className={style.schedule}>
