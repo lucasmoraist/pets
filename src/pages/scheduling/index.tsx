@@ -18,8 +18,6 @@ export function Scheduling() {
   };
 
   const handleSubmit = async (values: FormikValues) => {
-    console.log(values);
-
     const response = await createSchedule({
       owner: values.owner,
       pet: values.pet,
@@ -32,7 +30,6 @@ export function Scheduling() {
     if(response) {
       navigate("/");
     }
-
   };
 
   return (
