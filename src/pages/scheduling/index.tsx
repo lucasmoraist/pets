@@ -1,8 +1,8 @@
 import { FormikValues } from "formik";
 import style from "./scheduling.module.scss";
 import { FormTemplate } from "./components/form-template";
-import { createSchedule } from "../../api/api";
 import { useNavigate } from "react-router-dom";
+import { createSchedule } from "../../api/controller/scheduleController";
 
 export function Scheduling() {
 

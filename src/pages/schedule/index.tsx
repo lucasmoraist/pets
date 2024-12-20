@@ -6,8 +6,8 @@ import { Morning } from "./components/morning";
 import style from "./schedule.module.scss";
 import { Button } from "../../components/button";
 import { useEffect, useState } from "react";
-import { getSchedule } from "../../api/api";
 import { ISchedule } from "../../interface/schedule.interface";
+import { getSchedule } from "../../api/controller/scheduleController";
 
 type ValuePiece = Date | null;
 

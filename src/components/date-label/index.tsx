@@ -30,8 +30,6 @@ export function DateLabel({ date, setDate }: Props) {
     return "Nenhuma data selecionada";
   };
 
-  const minDate = new Date();
-
   return (
     <div className={style.dateContainer}>
       <div onClick={toggleModal} className={style.dateLabel}>
@@ -51,11 +49,10 @@ export function DateLabel({ date, setDate }: Props) {
         <div className={style.modal}>
           <Calendar
             onChange={(value) => {
-              setDate(value);
+              setDate(value as Date);
               toggleModal();
             }}
             value={date}
-            minDate={minDate}
           />
         </div>
       )}
