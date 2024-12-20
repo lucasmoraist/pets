@@ -1,5 +1,5 @@
 export interface IPet {
-    id: number;
+    id: string;
     name: string;
-    ownerId: number;
+    ownerId: string;
   }

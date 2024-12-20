@@ -1,5 +1,5 @@
 export interface ISchedule {
-  id?: number;
+  id?: string;
   time: string;
   owner: string | undefined;
   pet: string | undefined;

@@ -1,6 +1,6 @@
 export interface ISchedule {
-  id: number;
-  petId: number;
+  id: string;
+  petId: string;
   date: string;
   time: string;
   type: string;

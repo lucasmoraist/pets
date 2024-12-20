@@ -30,61 +30,61 @@
     {
       "id": "1",
       "name": "Thor",
-      "ownerId": 1
+      "ownerId": "1"
     },
     {
       "id": "2",
       "name": "Mel",
-      "ownerId": 2
+      "ownerId": "2"
     },
     {
       "id": "3",
       "name": "Bella",
-      "ownerId": 3
+      "ownerId": "3"
     },
     {
       "id": "4",
       "name": "Simba",
-      "ownerId": 4
+      "ownerId": "4"
     },
     {
       "id": "5",
       "name": "Max",
-      "ownerId": 5
+      "ownerId": "5"
     }
   ],
   "schedule": [
     {
       "id": "1",
-      "petId": 1,
+      "petId": "1",
       "date": "2024-12-20T03:00:00.000Z",
       "time": "09:00",
       "type": "Vacinação"
     },
     {
       "id": "2",
-      "petId": 2,
+      "petId": "2",
       "date": "2024-12-20T03:00:00.000Z",
       "time": "13:00",
       "type": "Corte de unhas"
     },
     {
       "id": "3",
-      "petId": 3,
+      "petId": "3",
       "date": "2024-12-20T03:00:00.000Z",
       "time": "14:00",
       "type": "Aplicação de anti-pulgas"
     },
     {
       "id": "4",
-      "petId": 4,
+      "petId": "4",
       "date": "2024-12-20T03:00:00.000Z",
       "time": "15:00",
       "type": "Tosa higiênica"
     },
     {
-      "id": 5,
-      "petId": 5,
+      "id": "5",
+      "petId": "5",
       "date": "2024-12-20T03:00:00.000Z",
       "time": "20:00",
       "type": "Limpeza de dentes"
