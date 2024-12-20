@@ -41,6 +41,7 @@ const getSchedule = async (date: string) => {
       }
 
       return {
+        id: schedule.id,
         time: schedule.time,
         owner: owner.name,
         pet: pet.name,
@@ -93,4 +94,14 @@ const createSchedule = async (data: createScheduleData) => {
   }
 };
 
-export { getSchedule, createSchedule };
+const deleteSchedule = async (id: number) => {
+  try {
+    console.log(id);
+    await api.delete(`/schedule/${id}`);
+  } catch (error) {
+    console.error("Error deleting schedule:", error);
+    throw error;
+  }
+}
+
+export { getSchedule, createSchedule, deleteSchedule };
