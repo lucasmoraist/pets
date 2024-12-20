@@ -12,7 +12,9 @@ export const schema = Yup.object().shape({
       "A data não pode ser anterior ao dia de hoje",
       (value) => {
         const today = new Date();
+        today.setHours(0, 0, 0, 0);
         const selectedDate = new Date(value);
+        selectedDate.setHours(0, 0, 0, 0);
         return selectedDate >= today;
       }
     )
