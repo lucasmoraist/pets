@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .form {
+    background-color: #23242c;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title {
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+      font-family: "Inter Tight", serif;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      margin-top: 20px;
+      gap: 10px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

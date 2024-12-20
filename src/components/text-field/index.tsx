@@ -134,6 +134,6 @@ const ErrorContainer = styled.div`
 `;
 
 const ErrorText = styled.span`
-  font-size: 12px;
+  font-size: 0.875rem;
   color: #ff4d4f;
 `;
