@@ -28,7 +28,7 @@ export function Scheduling() {
     });
 
     if(response) {
-      navigate("/");
+      navigate("/agenda");
     }
   };
 

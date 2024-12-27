@@ -24,6 +24,11 @@
       "id": "5",
       "name": "Camila Santos",
       "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": "24c1",
+      "name": "Lucas",
+      "phoneNumber": "11981109608"
     }
   ],
   "pet": [
@@ -51,6 +56,11 @@
       "id": "5",
       "name": "Max",
       "ownerId": "5"
+    },
+    {
+      "id": "5b52",
+      "name": "Cheddar",
+      "ownerId": "24c1"
     }
   ],
   "schedule": [
